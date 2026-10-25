@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>С Днём Рождения! 🌺</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+
+
+<section class="s" id="s1">
+<h1 class="rv in">С Днём Рождения,<br><span id="nm"></span>! 🎉</h1>
+<div id="st"><div id="glow"></div><button class="arr" style="left:-52px" onclick="go(-1)">‹</button><button class="arr" style="right:-52px" onclick="go(1)">›</button></div>
+<div id="comp"></div><div id="dots"></div><div id="pl"></div>
+<div class="hint">листай вниз ↓</div>
+</section>
+
+<section class="s" id="s2">
+<h2 class="rv">Тебе открытка 💌</h2>
+<div class="card rv" id="pc"></div>
+<button class="btn pulse rv" id="rd" style="margin-top:28px">Прочитала</button>
+</section>
+
+<section class="s lk" id="s3">
+<h2 class="rv">Что откроем? 🌺</h2>
+<div class="menu">
+<div class="mb g rv" onclick="to('s4')"><em>💌</em>Поздравления</div>
+<div class="mb g rv" style="--d:.15s;transition-delay:.15s" onclick="to('s5')"><em>📸</em>Воспоминания</div>
+<div class="mb g rv" style="transition-delay:.3s" onclick="to('s6')"><em>✈️</em>Карта желаний</div>
+</div>
+</section>
+
+<section class="s lk" id="s4">
+<h2 class="rv">Слова от друзей 💙</h2><div class="fr" id="fr"></div><button class="btn rv" id="aw" style="margin-top:28px">Добавить пожелание ✍️</button></section>
+
+<section class="s lk" id="s5">
+<h2 class="rv">Наши воспоминания 📸</h2><div class="pw" id="pw"></div></section>
+
+<section class="s lk" id="s6">
+<div class="me" id="me"></div><h2 style="margin-bottom:10px">Карта желаний 🌍</h2>
+<div id="wish" class="g"></div>
+<div id="gl"><img id="gi" alt="Земля"><div id="ct"></div><div id="pn"><svg viewBox="0 0 24 24"><path fill="#fff" d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div></div>
+<button class="btn" style="margin-top:18px;padding:12px 26px" onclick="rep()">Ещё раз ✈️</button>
+</section>
+
+<section class="s lk" id="s7">
+<h1 class="rv">С Днём<br>Рождения! 🎂</h1>
+<p class="rv g" style="font:700 clamp(18px,3.6vw,24px)/1.5 Nunito,sans-serif;max-width:600px;margin:20px 0;padding:16px 26px">«Ohana» — это про нас. Спасибо, что ты у нас есть. Любим тебя! 💙</p>
+<button class="btn pulse rv" onclick="burst()">Салют! 🎆</button></section>
+
+<div class="md" id="md" hidden><form id="wf" class="g" autocomplete="off"><h3>Твоё пожелание 💌</h3>
+<textarea id="wt" maxlength="500" rows="5" placeholder="Напиши пожелание…" required></textarea>
+<input id="wn" maxlength="60" placeholder="Имя и фамилия (необязательно)">
+<input id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+<div class="ac"><button type="button" class="btn" id="wc">Закрыть</button><button type="submit" class="btn">Отправить</button></div><div id="we"></div></form></div>
+<div id="ts" class="g"></div>
+<script src="script.js"></script></body></html>
